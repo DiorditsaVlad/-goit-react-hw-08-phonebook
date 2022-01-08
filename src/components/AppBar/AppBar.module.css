@@ -1,0 +1,26 @@
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.authBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 25vh;
+}
+
+.navLink {
+  text-decoration: none;
+  color: rgb(8, 8, 62);
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.navLink_active {
+  color: rgb(97, 97, 181);
+}

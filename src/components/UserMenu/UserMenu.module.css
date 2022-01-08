@@ -1,0 +1,38 @@
+.userBlockContainer {
+  width: 170px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.userBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UserIconWrapper {
+  margin-right: 7px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.userIcon {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.logOutIcon {
+  width: 500;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0;
+  cursor: pointer;
+}
