@@ -1,26 +1,26 @@
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import {
   persistReducer,
+  persistStore,
   PAUSE,
   REHYDRATE,
   PERSIST,
   PURGE,
   FLUSH,
+  REGISTER,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
 import contactsReducer from "./phonebook/phonebook-reducer";
 import authSlice from "./auth/auth-slice";
-import persistStore from "redux-persist/lib/persistStore";
 
 const middleware = [
   ...getDefaultMiddleware({
     serializableCheck: {
-      ignoredActions: [PAUSE, REHYDRATE, PERSIST, PURGE, FLUSH],
+      ignoredActions: [PAUSE, REHYDRATE, PERSIST, PURGE, FLUSH, REGISTER],
     },
   }),
 ];
-
 const authPersistConfig = {
   key: "auth",
   storage,

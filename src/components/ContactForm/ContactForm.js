@@ -7,7 +7,7 @@ import styles from "./ContactForm.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { getContacts } from "../../redux/phonebook/phonebook-selectors";
 
-function ContactForm({ submitHandler }) {
+function ContactForm() {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
 
@@ -40,7 +40,7 @@ function ContactForm({ submitHandler }) {
       alert(`${name} is already in contact`);
       return;
     }
-    dispatch(submitHandler({ name, number }));
+    dispatch(contactsOperations.addContact({ name, number }));
 
     setName("");
     setNumber("");
